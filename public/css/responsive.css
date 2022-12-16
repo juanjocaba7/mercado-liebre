@@ -1,0 +1,148 @@
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+.header-superior{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2rem 0;
+}
+.barra-busqueda{
+    background-color: white;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.barra-busqueda form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.lupa{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+.copy-header{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.busqueda{
+    width: 100%;
+    display: inline;
+}
+.busqueda input{
+    width: 100%;
+}
+
+.navbar{
+    display: none;
+}
+.navbar ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+.hamburguer-button{
+    text-align: center;
+    align-self: center;
+    background-color: rgb(63, 20, 237);
+    padding: 1rem;
+    color: white;
+    width: 50px;
+    margin: auto;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+   
+}
+
+@media(min-width:361px){
+    
+    .hamburguer-button{
+        display: none;
+    }
+    .barra-busqueda{
+        width: 30%;
+    }
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        text-align: right;
+    }
+    .navbar{
+        display: flex; 
+        flex-wrap: column;
+        justify-content: space-between;
+        padding-bottom: 1.5rem;
+    }
+    .right-navbar .left-navbar{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar li{
+        margin: 0 5px;
+    }
+    .wrap-dinamico li{
+        width: 45%;
+    }
+    .ultima-visita .ofertas{
+        justify-content: space-between;
+    }
+
+    .articulo{
+        width: 40%;
+    }
+    .articulo:hover{
+        box-shadow : 4px 4px 11px 3px rgb(2, 115, 117)
+    }
+    }
+ 
+@media(min-width:768px){
+    .main-header-top-bar, .navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .navbar li{
+        margin: 0 10px;
+    }
+    .navbar a{
+        font-size: 16px;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .articulo{
+        width: 22%;
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

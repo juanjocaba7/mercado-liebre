@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: #ebebeb
+}
+main{
+    width: 90%;
+    margin: auto;
+    
+}
+.ultima-visita, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1 rem;
+}
+
+.articulo{
+    width: 100%;
+    margin-bottom: 15px;
+    border: none 1px;
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+    
+}
+
+.descripcion{
+    
+    text-align: left;
+    position: relative;
+    border-top: solid 1px  #ebebeb;
+    padding: 1rem;
+}
+.descripcion i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width:30px;
+    width: 30px;
+}
+
+
+h4{
+    font-size: 16px;
+    text-align: center;
+}
+
+.camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    color: rgb(47, 151, 47); 
+    width: 2rem;
+    height: 2rem;
+    border:solid 1px green;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    top: -15px;
+    transition: 
+        ease-out transform .5s,
+        ease-out right .5s;
+}
+.articulo:hover .camion{
+    transform: rotateZ(360deg);
+    right: 30px;
+}
+
+
+h3{
+    font-size: 24px;
+    width: 100%;
+    margin:1rem 0
+}
+
+.precioydescuento{
+    display: flex;
+   width: auto;
+
+}
+.precio{
+    font-size: 15px;
+    padding-right: 1rem;
+}
+
+.descuentos{
+    font-size: 10px;
+    color: green;
+}
+
+
+footer{
+    background-color:  white;
+    
+}
+.footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-sec{
+    padding :1rem
+}
+
+
+.fa-credit-card , .fa-gift, .fa-user-shield{
+    text-align: center;
+    color: blue;
+    font-size: 2em;
+}
+.fa-credit-card:hover , .fa-gift:hover, .fa-user-shield:hover{
+    color: blueviolet;
+}
+
+.copyrigth{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1rem;
+}
+.nombre{
+    display: none;
+}
+.articulo:hover .nombre{
+    display: block;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
